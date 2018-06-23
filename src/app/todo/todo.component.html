@@ -1,0 +1,4 @@
+<div>
+  <todo-input (onAddTodo)="addTodo($event)"></todo-input>
+  <todo-list [list]="todos" (onStatusChange)="onChangeStatus($event)"></todo-list>
+</div>

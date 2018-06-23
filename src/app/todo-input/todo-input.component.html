@@ -1,0 +1,6 @@
+<div class="input-wrapper">
+  <input type="text" placeholder="add todo" [(ngModel)]="newTodo" (keydown)="onKeyDown($event)"/>
+  <br/>
+  <span *ngIf="newTodo"> You are typing {{ newTodo }}</span>
+  <span class="add-todo" (click)="addTodoChild()">+</span>
+</div>
